@@ -175,7 +175,7 @@ namespace Resto.Front.Api.SamplePlugin
             var dialogResult = viewManager.ShowExtendedInputDialog("Opinion survey, step 2", "Try to enter something or scan barcode or swipe magnetic card or whatever.", settings);
             switch (dialogResult)
             {
-                case null: // user cancelled the dialog
+                case null: 
                     ShowNotification("Bye-bye!");
                     break;
                 case BarcodeInputDialogResult barcode:
